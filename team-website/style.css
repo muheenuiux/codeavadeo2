@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: #fff;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0,0,0,0.7);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar nav a {
+  margin-left: 1rem;
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.navbar nav a:hover { color: #00e0ff; }
+.logo { font-weight: bold; font-size: 1.3rem; }
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+.hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+.hero p { max-width: 600px; margin-bottom: 1.5rem; color: #ccc; }
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.btn.primary { background: #00e0ff; color: #000; }
+.btn.primary:hover { background: #00b8cc; }
+.btn.secondary { border: 2px solid #00e0ff; color: #00e0ff; }
+.btn.secondary:hover { background: #00e0ff; color: #000; }
+
+.section { padding: 4rem 2rem; text-align: center; }
+.section.dark { background: rgba(255,255,255,0.05); }
+.section h2 { font-size: 2rem; margin-bottom: 2rem; color: #00e0ff; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #00e0ff33;
+}
+
+.contact-form { display: flex; flex-direction: column; gap: 1rem; max-width: 500px; margin: auto; }
+.contact-form input, .contact-form textarea {
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+.contact-form button { border: none; cursor: pointer; }
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0,0,0,0.7);
+  font-size: 0.9rem;
+  color: #aaa;
+}
